@@ -13,6 +13,7 @@ class BookListViewModel: BaseViewModel() {
         when(action) {
             is BookListAction.OnSearchQueryChange -> {
                 _state.update {
+                    println("NINVB => query ${action.query}")
                     it.copy(searchQuery = action.query)
                 }
             }
