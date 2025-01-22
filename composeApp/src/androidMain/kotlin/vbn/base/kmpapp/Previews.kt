@@ -8,6 +8,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import vbn.base.kmpapp.features.book.presentation.book_list.BookListScreen
+import vbn.base.kmpapp.features.book.presentation.book_list.BookListState
+import vbn.base.kmpapp.features.book.presentation.book_list.books
 import vbn.base.kmpapp.features.book.presentation.book_list.components.BookSearchBar
 
 @Preview
@@ -27,4 +30,15 @@ fun BookSearchBarPreview() {
             )
         }
     }
+}
+
+@Preview
+@Composable
+fun BookListScreenPreview() {
+    BookListScreen(
+        state = BookListState(
+            searchResults = books
+        ),
+        onAction = {}
+    )
 }
