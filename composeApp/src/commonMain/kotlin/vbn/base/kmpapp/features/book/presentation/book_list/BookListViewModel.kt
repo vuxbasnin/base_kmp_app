@@ -4,8 +4,12 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import vbn.base.kmpapp.core.presentation.base.BaseViewModel
+import vbn.base.kmpapp.features.book.domain.BookRepository
 
-class BookListViewModel: BaseViewModel() {
+//presentation -> domain <- data
+class BookListViewModel(
+    private val bookRepository: BookRepository
+): BaseViewModel() {
     private val _state = MutableStateFlow(BookListState())
     val state = _state.asStateFlow()
 
