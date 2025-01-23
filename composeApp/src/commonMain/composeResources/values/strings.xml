@@ -6,4 +6,11 @@
     <string name = "favorites">Favorites</string>
     <string name = "no_search_results">Oops, there aren't any books for your search query.</string>
     <string name = "no_favorite_book">You haven't saved any favorite books yet.</string>
+    <string name = "error_disk_full">Disk full.</string>
+    <string name = "error_unknown">Unknown error</string>
+    <string name = "error_request_timeout">The request timed out</string>
+    <string name = "error_no_internet">No internet</string>
+    <string name = "error_too_many_request">Too many request</string>
+    <string name = "error_serialization">Too many request</string>
+    <string name = "error_server">Server error</string>
 </resources>
