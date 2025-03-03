@@ -10,6 +10,7 @@ import vbn.base.kmpapp.features.book.data.network.KtorRemoteBookDataSource
 import vbn.base.kmpapp.features.book.data.network.RemoteBookDataSource
 import vbn.base.kmpapp.features.book.data.repository.DefaultBookRepository
 import vbn.base.kmpapp.features.book.domain.BookRepository
+import vbn.base.kmpapp.features.book.presentation.SelectedBookViewModel
 import vbn.base.kmpapp.features.book.presentation.book_list.BookListViewModel
 
 expect val platformModule: Module
@@ -22,4 +23,5 @@ val sharedModule = module {
     singleOf(::DefaultBookRepository).bind<BookRepository>()
 
     viewModelOf(::BookListViewModel)
+    viewModelOf(::SelectedBookViewModel)
 }
