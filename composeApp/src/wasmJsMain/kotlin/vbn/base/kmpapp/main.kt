@@ -13,10 +13,6 @@ import vbn.base.kmpapp.di.initKoin
 fun main() {
     initKoin()
     ComposeViewport(document.body!!) {
-        App(
-            engine = remember {
-                HttpClient(Js).engine
-            }
-        )
+        App()
     }
 }
